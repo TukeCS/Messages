@@ -1,4 +1,4 @@
-#This project was made for my personal homemade server. Its purpose is to make some sort of messenging app into the console.
+# This project was made for my personal homemade server. Its purpose is to make some sort of messenging app into the console.
 
 ## Requirements:
 - Python3
