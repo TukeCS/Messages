@@ -4,7 +4,7 @@
 - Python3
 
 ## How to use:
-1. In the code replace the ip of my server with yours and whatever port you used. (in the client side ip and port, and serverside just the port)
+1. In the code replace the ip of my server with yours and whatever port you used. (in the client side replace your ip and port, and serverside just replace the port)
 2. go to your server (i use ubuntu server) and open the port you want to use:
    ```
    sudo ufw allow 17172/tcp
