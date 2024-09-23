@@ -1,8 +1,12 @@
 import socket
 import threading
 import sys
+from datetime import datetime
 
 username = ""
+
+def get_current_time():
+    return datetime.now().strftime('%H:%M:%S')
 
 def receive_messages(sock):
     while True:
@@ -18,7 +22,8 @@ def receive_messages(sock):
 def send_messages(sock):
     while True:
         message = input(f"{username}: ")
-        full_message = f"{username}: {message}"
+        current_time = get_current_time()
+        full_message = f"[{current_time}] {username}: {message}"
         sock.send(full_message.encode())
 
 def main():
